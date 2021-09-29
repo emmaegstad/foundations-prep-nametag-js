@@ -18,7 +18,7 @@ button.addEventListener('click', () => {
     pronounElement.textContent = `(${pronounInput.value})`;
     count = count + 1;
     counter.innerText = `Times Changed: ${count}`;
-    footer.innerText = `Nice to meet you, $    {nameInput.value}!`;
+    footer.innerText = `Nice to meet you, ${nameInput.value}!`;
 });
 
 fontSelect.addEventListener('input', () => {
