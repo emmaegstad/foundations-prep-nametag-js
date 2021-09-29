@@ -9,6 +9,7 @@ let counter = document.getElementById('counter');
 const blueButton = document.getElementById('blue-button');
 const greenButton = document.getElementById('green-button');
 const orangeButton = document.getElementById('orange-button');
+const randomButton = document.getElementById('random-button');
 let footer = document.getElementById('footer');
 let count = 0;
 
@@ -16,7 +17,7 @@ button.addEventListener('click', () => {
   nameElement.textContent = nameInput.value;
   pronounElement.textContent = `(${pronounInput.value})`;
   count = count + 1;
-  counter.innerText = count;
+  counter.innerText = `Times Changed: ${count}`;
   footer.innerText = `Nice to meet you, ${nameInput.value}!`;
 });
 
@@ -37,4 +38,16 @@ orangeButton.addEventListener('click', () => {
   sticker.style.backgroundColor = ('#ed820e');
 });
 
-// Add random color generator button
+function getRandomColor() {
+  let letters = '0123456789ABCDEF';
+  let color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+} 5
+
+randomButton.addEventListener('click', () => {
+  const randomColor = getRandomColor();
+  sticker.style.backgroundColor = randomColor;
+});
