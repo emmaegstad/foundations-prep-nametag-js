@@ -141,6 +141,12 @@ p {
 }
 
 .color-button__random {
+  display: flex;
+  font-size: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(#f11f1f, #1cd1d1);
   border-radius: 50%;
   width: 25px;
