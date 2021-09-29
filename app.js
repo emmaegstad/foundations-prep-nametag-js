@@ -19,6 +19,7 @@ button.addEventListener('click', () => {
     count = count + 1;
     counter.innerText = `Times Changed: ${count}`;
     footer.innerText = `Nice to meet you, ${nameInput.value}!`;
+    console.log(nameInput.value);
 });
 
 fontSelect.addEventListener('input', () => {
@@ -37,6 +38,8 @@ greenButton.addEventListener('click', () => {
 orangeButton.addEventListener('click', () => {
     sticker.style.backgroundColor = ('#ed820e');
 });
+
+//Started with a color generator from StackOverflow; let me know if there's a more formal way to pointing to code you've used/adapted.
 
 function getRandomColor() {
     let letters = '0123456789ABCDEF';
