@@ -14,40 +14,40 @@ let footer = document.getElementById('footer');
 let count = 0;
 
 button.addEventListener('click', () => {
-  nameElement.textContent = nameInput.value;
-  pronounElement.textContent = `(${pronounInput.value})`;
-  count = count + 1;
-  counter.innerText = `Times Changed: ${count}`;
-  footer.innerText = `Nice to meet you, ${nameInput.value}!`;
+    nameElement.textContent = nameInput.value;
+    pronounElement.textContent = `(${pronounInput.value})`;
+    count = count + 1;
+    counter.innerText = `Times Changed: ${count}`;
+    footer.innerText = `Nice to meet you, $    {nameInput.value}!`;
 });
 
 fontSelect.addEventListener('input', () => {
-  nameElement.style.fontFamily = fontSelect.value;
-  pronounElement.style.fontFamily = fontSelect.value;
+    nameElement.style.fontFamily = fontSelect.value;
+    pronounElement.style.fontFamily = fontSelect.value;
 });
 
 blueButton.addEventListener('click', () => {
-  sticker.style.backgroundColor = ('#1e90ff');
+    sticker.style.backgroundColor = ('#1e90ff');
 });
 
 greenButton.addEventListener('click', () => {
-  sticker.style.backgroundColor = ('#028a0f');
+    sticker.style.backgroundColor = ('#028a0f');
 });
 
 orangeButton.addEventListener('click', () => {
-  sticker.style.backgroundColor = ('#ed820e');
+    sticker.style.backgroundColor = ('#ed820e');
 });
 
 function getRandomColor() {
-  let letters = '0123456789ABCDEF';
-  let color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-} 5
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
 randomButton.addEventListener('click', () => {
-  const randomColor = getRandomColor();
-  sticker.style.backgroundColor = randomColor;
+    const randomColor = getRandomColor();
+    sticker.style.backgroundColor = randomColor;
 });
